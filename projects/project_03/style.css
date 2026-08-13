@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(60, 94, 82);
+}
+
+.conteiner{
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgba(127, 255, 212, 0.671);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.btnFrase{
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.btnFrase:hover {
+    background-color: black;
+    color: white;
+}
+
+
+h1{
+    color: white;
+    font-family: "Old English Text MT", "UnifrakturCook", "Cloister Black", serif;
+}
