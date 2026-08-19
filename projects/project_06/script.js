@@ -12,7 +12,7 @@ function adicionarTarefa() {
         contadorId++;
         tarefas.push({id: contadorId, tarefa: texto, concluido: false});
         inputText.value = "";
-        console.log(tarefas);
+        renderizar();
     }
 }
 
@@ -21,7 +21,28 @@ bntEnviar.addEventListener( "click", function(){
 })
 
 inputText.addEventListener("keydown", function(event){
-    if (event.key == "Enter") {
+    if (event.key === "Enter") {
         adicionarTarefa();
     }
 })
+
+function renderizar() {
+    lista.innerHTML = "" ;
+    tarefas.forEach(function (item) {
+        let li = document.createElement("li");
+        li.textContent = item.tarefa;
+        lista.appendChild(li);
+
+        let btnExcluir = document.createElement("button")
+        btnExcluir.innerText = "❌"
+        li.appendChild(btnExcluir);
+        btnExcluir.addEventListener("click", function(e){
+            e.stopPropagation();
+
+            tarefas = tarefas.filter(function(t){
+                return t.id !== item.id
+            })
+            renderizar();
+        })
+    })
+}

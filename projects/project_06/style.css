@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(70, 68, 68);
+    box-shadow: 20px 0px 20px;
+}
+
+.display {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.inputText {
+    margin-top: 50px;
+    width: 200px;
+    height: auto;
+    background-color: rgb(160, 160, 160);
+}
+
+.btnEnviar {
+    background-color: rgb(180, 180, 180);
+    height: 20px;
+    width: 60px;
+}
+
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: 20px auto;
+    gap: 15px; 
+}
+
+
+.displayLista {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: lightcoral; 
+    border-radius: 5px; 
+}
+
+h1{
+    display: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
